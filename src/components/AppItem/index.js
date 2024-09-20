@@ -1,9 +1,7 @@
-// Write your code here
-
+import React from 'react'
 import './index.css'
 
-const AppItem = props => {
-  const {eachAppListDetails} = props
+const AppItem = ({eachAppListDetails}) => {
   const {appId, appName, imageUrl, category} = eachAppListDetails
   return (
     <li className="app-item">
@@ -14,3 +12,4 @@ const AppItem = props => {
 }
 
 export default AppItem
+
